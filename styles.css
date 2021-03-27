@@ -13,6 +13,8 @@ body, html {
 
 #statementHeader {
     color: #ffb60a;
+    font-family: 'Roboto Slab', Rockwell, Serif;
+    font-size: calc(1rem + 1.3vw);
 }
 
 .navbar {
@@ -26,36 +28,36 @@ body, html {
     margin-left: 20px;
 }
 
-#imageDiv {
-    max-height: 400px;
-    overflow: hidden;
-}
-/* img {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 70vh;
-
-} */
-
 #box1{
-    background-color: #002642;
+    background-color: #70c1b3;
     padding: 2em;
-    color: white;
-    margin:auto;
-    text-align: center;
-    justify-content: center;
 }
 
 #box2{
-    background-color: #70c1b3;
+    background-color: #002642;
     padding: 2em;
+    color: white;
+    border-radius: 20px;
+    margin:auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #box3{
     background-color: #9dacff;
     padding: 2em;
 }
+
+.box{
+    display: flex;
+    border-radius: 20px;
+    margin:auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #innerText {
     position: absolute;
@@ -68,34 +70,70 @@ body, html {
     margin: 25px 50px 75px;
     /* font-size: 3vw; */
     font-size: calc(1rem + 1.3vw);
+    padding-bottom: 10px;
+    border-bottom: 1px solid #373f51;
+  
+}
+
+#innerText2 {
+    position: absolute;
+    display: block;
+    max-width: 500px;
+    min-width: 200px;
+    color: #373f51;
+    font-weight: bold;
+    font-family: 'Roboto Slab', Rockwell, Serif;
+    margin: 100px 50px 75px;
+    /* font-size: 3vw; */
+    font-size: 1.5rem;
   
 }
 
 #bannerDiv{
-  background-image: url("images/stories-YhM7-myr4qM-unsplash.jpg");
+  background-image: url("images/brooke-cagle-xpJqm-Om3vY-unsplash.jpg");
   width: 100%;
-  height:600px;
+  height:35rem;
   background-size: cover;
   background-position: center;
+  background-position-y: 40%;
   background-repeat: no-repeat;
   text-align:center;
   margin:auto;
   padding:0;
 }
 
+#bannerDivSm {
+    background-image: url("images/stories-YhM7-myr4qM-unsplash.jpg");
+    width: 100%;
+    height:150px;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 70%;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:auto;
+    padding:0;
+}
+
 .footer{
-    color:black;
+    color:#e5dada;
 }
 
 #boxes {
     margin-top: 2em;
+    margin-bottom: 4em;
 
 }
 
 .row-content{
     margin: 0px auto;
 	padding: 50px 0px 50px 0px;
-    min-height: 550px;
+    min-height: 450px;
     font-family: 'Lato', sans-serif;
     font-size: larger;
+}
+
+#footerDiv {
+    background-color: #002642;
+    color: #e5dada;
 }
