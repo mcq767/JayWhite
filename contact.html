@@ -1,41 +1,114 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel='stylesheet' href='node_modules/jquery/dist/jquery.min.js'>
-        <link rel='stylesheet' href='styles.css'>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item ml-2">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <div id = 'bannerDivSm'>
-            <h1 id = 'innerText'>Jay White Counseling, LLC</h1>
-          </div> 
-    </body>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <link rel='stylesheet' href='node_modules/jquery/dist/jquery.min.js'>
+      <link rel='stylesheet' href='styles.css'>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+  </head>
+  <body>
+<!-- Navbar Start -->
+    <nav class="navbar navbar-light flex-nowrap flex-row">
+      <div class="navbarLinksDiv container-xxl">
+          <ul class="nav navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+<!-- Navbar End -->
+    <div id = 'bannerDivSm'>
+      <h1 id = 'innerText'>Jay White Counseling, LLC</h1>
+    </div> 
+    <div class = 'container my-5'>
+      <div class = 'row'>        
+          <h1 id = 'statementHeader'>Reach Out Today</h1>
+          <br>
+          <p>
+            Jay White Counseling offers both in-person and telephone sessions to fit your
+            comfort level. I can also be available in early morning, later afternoon or weekend
+            hours. I promote an open-minded concept that will fit you specifically--using your
+            strengths and working on pieces you want to work on--and I believe in meeting you
+            “where you are,” in life. We can move at your speed. If you want to be challenged,
+            that is up to you. Let’s do it! Time to start to get on track and enjoy life!
+          </p>       
+        </div>
+      </div>          
+    </div>
+    <div class = 'container my-5' >
+      <div class = 'row'>
+        <div class = 'col-md-12 col-lg-3 d-flex'>
+          <div class='mt-1 mr-1'>
+            <span class="material-icons">phone</span>
+          </div>
+          <div>
+            <h2>Phone</h2>
+            <p>(608) 515-3918</p>
+          </div>
+        </div>
+        <div class = 'col-md-12 col-lg-3 d-flex'>
+          <div class='mt-1 mr-1'>
+            <span class="material-icons">business</span>
+          </div>
+          <div>
+            <h2>Address</h2>
+            <p>811 East Washington Ave. Suite 420, Madison, WI 53703</p>
+          </div>
+        </div>
+        <div class = 'col-md-12 col-lg-3 d-flex'>
+          <div class='mt-1 mr-1'>
+            <span class="material-icons">schedule</span>
+          </div>
+          <div>
+            <h2>Hours</h2>
+            <p>Very flexible! By Appointment Only</p>
+          </div>
+        </div>
+        <div class = 'col-md-12 col-lg-3 d-flex'>
+          <div class='mt-1 mr-1'>
+            <span class="material-icons">email</span>
+          </div>
+          <div>
+            <h2>Email</h2>
+            <p>jay27white@hotmail.com</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+<!-- FOOTER BELOW -->
+    <div id='footerDiv'>
+      <footer class="text-center text-lg-start text-light">
+        <div class="text-center p-3">
+          <a href = "https://www.google.com/maps?q=811+East+Washington+Ave,+Madison,+WI+53703" class = "footer">811 East Washington Ave. Suite 420, Madison, WI 53703</a>
+          &emsp;|&emsp;
+          <a href = "mailto:jay27white@hotmail.com" class = "footer">jay27white@hotmail.com</a>
+          &emsp;|&emsp;
+          <a href = "tel:608-515-3918" class = "footer">(608) 515-3918</a>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3">
+          <p class = "footer">© 2020 Copyright: Jay White Counseling LLC</p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>        
+<!-- END FOOTER   -->
+
+  </body>
 </html>

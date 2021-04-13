@@ -1,22 +1,14 @@
 body, html {
     height: 100%;
+
 }
 
-#missionStatementRow {
-    height: 300px;
+p, a {
+    font-family: 'Lato', sans-serif;
+    font-size: larger;
 }
 
-#missionStatementDiv {
-    margin: auto;
-    text-align: center;
-}
-
-#statementHeader {
-    color: #ffb60a;
-    font-family: 'Roboto Slab', Rockwell, Serif;
-    font-size: calc(1rem + 1.3vw);
-}
-
+/* Navbar Css Start */
 .navbar {
     background-color: white;
     margin: 25px 0px 25px;
@@ -25,39 +17,35 @@ body, html {
 }
 
 .nav-item {
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
-#box1{
-    background-color: #70c1b3;
-    padding: 2em;
+/* Image Banner with Text CSS Start */
+#bannerDiv{
+  background-image: url("images/brooke-cagle-xpJqm-Om3vY-unsplash.jpg");
+  width: 100%;
+  height:35rem;
+  background-size: cover;
+  background-position: center;
+  background-position-y: 40%;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
 }
 
-#box2{
-    background-color: #002642;
-    padding: 2em;
-    color: white;
-    border-radius: 20px;
+#bannerDivSm{
+    background-image: url("images/federica-giusti-0wdkn9-n3vY-unsplash.jpg");
+    width: 100%;
+    height:12rem;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    text-align:center;
     margin:auto;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#box3{
-    background-color: #9dacff;
-    padding: 2em;
-}
-
-.box{
-    display: flex;
-    border-radius: 20px;
-    margin:auto;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
+    padding:0;
+  }
 
 #innerText {
     position: absolute;
@@ -68,8 +56,7 @@ body, html {
     font-weight: bold;
     font-family: 'Roboto Slab', Rockwell, Serif;
     margin: 25px 50px 75px;
-    /* font-size: 3vw; */
-    font-size: calc(1rem + 1.3vw);
+    font-size: calc(1.3rem + 1vw);
     padding-bottom: 10px;
     border-bottom: 1px solid #373f51;
   
@@ -84,39 +71,51 @@ body, html {
     font-weight: bold;
     font-family: 'Roboto Slab', Rockwell, Serif;
     margin: 100px 50px 75px;
-    /* font-size: 3vw; */
     font-size: 1.5rem;
-  
 }
 
-#bannerDiv{
-  background-image: url("images/brooke-cagle-xpJqm-Om3vY-unsplash.jpg");
-  width: 100%;
-  height:35rem;
-  background-size: cover;
-  background-position: center;
-  background-position-y: 40%;
-  background-repeat: no-repeat;
-  text-align:center;
-  margin:auto;
-  padding:0;
+/* Mission Statement CSS Start */
+#missionStatementDiv {
+    margin: 5rem auto 5rem !important;
+    text-align: center;
 }
 
-#bannerDivSm {
-    background-image: url("images/stories-YhM7-myr4qM-unsplash.jpg");
-    width: 100%;
-    height:150px;
-    background-size: cover;
-    background-position: center;
-    background-position-y: 70%;
-    background-repeat: no-repeat;
-    text-align:center;
-    margin:auto;
-    padding:0;
+#statementHeader {
+    color: #ffb60a;
+    font-family: 'Roboto Slab', Rockwell, Serif;
+    font-size: calc(1.3rem + 1vw);
+    margin-bottom: 2rem;
 }
 
-.footer{
-    color:#e5dada;
+/* Info Cards CSS Start */
+#box1{
+    background-color: #70c1b3;
+    padding: 1.5em;
+}
+
+#box2{
+    background-color: #002642;
+    padding: 1.5em;
+    color: white;
+}
+
+#box3{
+    background-color: #9dacff;
+    padding: 1.5em;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin: 0px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+    min-height: 450px;
+    font-family: 'Lato', sans-serif;    
 }
 
 #boxes {
@@ -125,15 +124,54 @@ body, html {
 
 }
 
-.row-content{
-    margin: 0px auto;
-	padding: 50px 0px 50px 0px;
-    min-height: 450px;
-    font-family: 'Lato', sans-serif;
-    font-size: larger;
+    /* Without below code, the row extends several pixels too long */
+.row {
+    margin: auto;
+}
+
+/* About Us Page CSS Start */
+
+#aboutContent {
+    background-color: #00477A;
+    color: whitesmoke;
+}
+
+/* Contact Us Page CSS Start */
+.material-icons {
+    font-size: 30px !important;
+}
+
+
+/* Footer CSS Start */
+.footer{
+    color:#e5dada;
 }
 
 #footerDiv {
-    background-color: #002642;
+    background-color: #8d93b9;
     color: #e5dada;
 }
+
+/* Media Query Start */
+    /* Hiding subtitle on banner with smaller screens index page image banner*/
+@media only screen and (max-width: 1109px) {
+    #innerText2 {
+        display: none;
+    }
+    #bannerDiv {
+        height: 25rem !important;
+        width: 100%;
+    }
+}
+    /* Adding margins when info cards are stacked vertically */
+@media only screen and (max-width: 992px) {
+    .box {
+        margin-bottom: 2rem !important;
+        width: 90%;
+    }
+
+    #bannerDivSm {
+        height: 6rem;
+    }
+}    
+
